@@ -1,0 +1,66 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a title="Vedikas" href="#"> <img alt="vedikas logo"
+              class="site-header-logo__img Header-BG img-responsive" itemprop="logo"
+              src=".././../../../assets/Images/logos/lasttttt.png" alt="Vedikas"
+              style="margin-top: 0px; float: left; height: 55px; width: 80px;">
+              <a href="#">
+                  <h1 class="headline" style="position: absolute; 
+                  margin-top: 10px; 
+                  margin-left: 80px; 
+                  font-family: 'Satisfy', sans-serif;
+                  color: rgba(0, 0, 0, 0.699);">Vedikas</h1>
+
+              </a>
+             
+      </a>
+      </div>
+  </div>
+</nav>
+
+<section class="main">
+  <div class="login-form">
+    <form #postForm="ngForm">
+      <h2 style="color: rgba(17, 18, 75, 0.719);"><strong> Login</strong></h2>
+      <div class="form-group">
+        <input placeholder="Mobile Number*" type="Mobile number" class="form-control" required ngModel name="Number" maxlength="10" pattern="[0-9]{10}">
+      </div>
+      <div class="form-group" style="margin-left: 90px;">
+        <button type="button" class="btn btn-link">Resend OTP</button>
+        <button type="submit" class="btn btn-warning">Send OTP</button>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Otp*" ngModel required>
+      </div>
+      <BR>
+      <div class="form-group">
+        <button type="submit" class="btn btn-warning btn-block" [disabled]="!postForm.valid"  data-toggle="modal" data-target="#log-in">Log in</button>
+      </div>
+      <p class="text-center"><a [routerLink]="['/owner-register']">Create an Account</a></p>
+    </form>
+  </div>
+</section>
+
+<div class="modal fade" id="log-in">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><b>Thank You</b></h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <b style="color: green;">Congratulations, your account has been successfully created.</b>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">cancel</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="login()">Okay</button>
+      </div>
+    </div>
+  </div>
+</div>

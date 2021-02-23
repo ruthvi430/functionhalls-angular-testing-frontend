@@ -1,0 +1,99 @@
+.panel-heading a:after {
+  font-family:'Glyphicons Halflings';
+  content:"\e114";
+  float: right;
+  color: grey;
+  margin-top: 50px;
+}
+.panel-heading a.collapsed:after {
+  content:"\e080";
+}
+.caret {
+  border-top: 6px dashed;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  float: right;
+  margin-top: 1%;    
+}
+
+.container{
+ margin-top: 50px;
+ width: 700px
+}
+h1, h2, h3, h5, h6 {
+  font-family: "Satisfy", sans-serif;
+}
+h4{
+  font-family: "Lato","Noto Sans JP","Noto Sans KR","Lucida Grande","Segoe UI","Tahoma","-apple-system","Roboto",sans-serif;
+
+}
+.panel-body{
+font-family: "Lato","Noto Sans JP","Noto Sans KR","Lucida Grande","Segoe UI","Tahoma","-apple-system","Roboto",sans-serif;
+font-weight: 400;
+}
+.btn-warning{
+background-color: #cc5510de;
+border-color: #cc5510de;
+}
+.btn-warning:hover{
+background-color: #c94d05;
+border-color: #cc5510de;
+
+}
+.panel-default{
+  cursor: pointer;
+  
+  }
+.btn{
+font-family: "Lato","Noto Sans JP","Noto Sans KR","Lucida Grande","Segoe UI","Tahoma","-apple-system","Roboto",sans-serif;
+font-weight: 400;
+}
+label{
+font-family: "Lato","Noto Sans JP","Noto Sans KR","Lucida Grande","Segoe UI","Tahoma","-apple-system","Roboto",sans-serif;
+
+}
+textarea{
+font-family: "Lato","Noto Sans JP","Noto Sans KR","Lucida Grande","Segoe UI","Tahoma","-apple-system","Roboto",sans-serif;
+
+}
+@media only screen and(min-width:700px){
+.panel-default{
+  width: 50%;
+  font-family: "Lato","Noto Sans JP","Noto Sans KR","Lucida Grande","Segoe UI","Tahoma","-apple-system","Roboto",sans-serif;
+font-weight: 800;
+}
+}
+
+
+/* ===============================media queries==================================== */
+@media only screen and (max-width: 500px){
+.caret {
+  float: right;
+  margin-top: 3%;
+  border-top: 11px dashed;
+  border-right: 11px solid transparent;
+  border-left: 11px solid transparent;
+}
+.panel-title {
+margin-top: 0;
+margin-bottom: 16px;
+font-size: 30px;
+color: inherit;
+}
+label {
+  font-size: 30px;
+}
+.btn{
+font-size: 30px;
+}
+.panel-body {
+font-size: 30px;
+}
+.panel-body {
+  padding: 25px;
+  font-size: 30px;
+}
+textarea.form-control {
+  font-size: 30px;
+}
+}  
